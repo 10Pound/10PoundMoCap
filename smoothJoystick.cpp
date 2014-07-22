@@ -12,10 +12,10 @@ joystick::joystick(byte analogPin, unsigned int initialVal) {
   pinMode(_analogPin, INPUT);
  
   // initialize our buffer to 512 - this is the joystick neutral position
-  for (int i = 0; i < _bufferSize; i++) {
+ /* for (int i = 0; i < _bufferSize; i++) {
     _buffer[i] = _initialVal;
   }
- 
+ */
   // initialize
   _bufferIndex = 0;
   _bufferSum = _initialVal * _bufferSize;
